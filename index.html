@@ -8,6 +8,9 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Henny+Penny&family=Irish+Grover&display=swap" rel="stylesheet">
 
     <style>
         
@@ -27,12 +30,27 @@
 
             .box {
                 width: 1200px;
-                height: 500px;
+                height: 680px;
                 background-color: rgb(212, 200, 148);
                 border-radius: 20px;
                 text-align: center;
                 margin: 0 auto;
-}
+            
+            }
+
+            details {
+                text-align: left;
+                margin-top: 20px;
+                margin-left: 20px; 
+            }
+
+ 
+
+          
+          
+
+
+
 
         
     </style>
@@ -45,11 +63,9 @@
 <br>
 <br>
 
- <details class="onclick">
-            <summary>Question 3</summary>
-            <p id="instruct"></p>
-        </details>
 
+
+ 
     <div class="box">
 
         <center>
@@ -62,26 +78,35 @@
     <p class=".nosifer-regular" style="text-align: center; display: inline-block; color: #401891; font-family: Nosifer; font-size: 100px;">R</p>
     </center>
 
-        Do you want to dive into the world world of FUGGLERS? Once you buy one, there is no going back. <br> You will be ADDICTED to collecting these weird, creepy, but also cute creatures. 
+       <p style="font-family: Irish Grover
+; font-size: 20px;"> Do you want to dive into the world world of FUGGLERS? Once you buy one, there is no going back. <br> You will be ADDICTED to collecting these weird, creepy, but also cute creatures.</p>
 
-
-        <br><br>
-
-
-        For one fuggler, it only costs Php 500! But, it does not stop at the fact that you will recieve an amazing <br> toy, we also have a special offer for you. If you buy  a fuggler, you will get a 20% discount on your total purpchase, <br> don't miss out on this amazing deal! Get your own Fuggler NOW!
 
         <br>
-<script>
 
+
+              <p style="font-family: Irish Grover; font-size: 20px;
+"> For one fuggler, it only costs Php 500! But, it does not stop at the fact that you will recieve an amazing <br> toy, we also have a special offer for you. If you buy  a fuggler, you will get a 20% discount on your total purpchase, <br> don't miss out on this amazing deal! Get your own Fuggler NOW!</p>
+
+        <br>
+
+<details class="onclick" style="font-size: 20px; font-family: Irish Grover;">
+            <summary>Instruction</summary>
+            <p id="instruct"></p>
+
+        </details>
+
+
+<script>
 document.getElementById("instruct").innerHTML = "Enter the original price of the fuggler to calculate the discounted price.";
 
 
 
   function calculate() {
     let price = document.getElementById("price").value;
-    let discountRate = 0.20; // 20% discount
+    let discount = 0.20; // 20% discount
 
-    let disc = price - (price * discountRate);
+    let disc = price * discount;
     let finalPrice = disc.toFixed(2);
 
     alert("Final Price after discount: Php" + finalPrice);
@@ -90,16 +115,19 @@ document.getElementById("instruct").innerHTML = "Enter the original price of the
 
 <br> 
         <form>
-        <label for="price">Enter the original price</label>
+        <label for="price"; style="font-family: Irish Grover; font-size: 20px;">Enter the original price</label>
         <input type="number" id="price" class="form-control" placeholder="Enter here.." required>
   <br><br>
 
-  <button type="button" class="btn btn-danger" onclick="calculate()">Discount</button>
-  <button type="button" class="btn btn-success" onclick="window.location.reload()">Refresh</button>
+  <button type="button" class="btn btn-danger" onclick="calculate()"; style="font-family: Irish Grover;" >Discount</button>
+  <button type="button" class="btn btn-success" onclick="window.location.reload()"; style="font-family: Irish Grover;">Refresh</button>
 </form>
 
-
     </div>
+
+   
     
+
+
 </body>
 </html>
